@@ -1,0 +1,46 @@
+<app-navigation></app-navigation>
+
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input type="text" name="nombre_eq" [(ngModel)]="equipo.nombre_eq" placeholder="nombre equipo" class="form-control"autofocus>
+        </div>
+           <div class="form-group">
+             <input type="text" name="region" [(ngModel)]="equipo.region" placeholder="region" class="form-control"autofocus>
+           </div>
+
+           <div class="form-group">
+            <input type="text" name="tag" [(ngModel)]="equipo.tag" placeholder="tag" class="form-control"autofocus>
+          </div>
+
+          <div class="form-group">
+              <input type="text" name="categoria_eq" [(ngModel)]="equipo.categoria_eq" placeholder="vidojuego" class="form-control"autofocus>
+            </div>
+
+             <div class="form-group">
+               <input type="text" name="cod_organizacion" [(ngModel)]="equipo.cod_organizacion" placeholder="codigo organizacion" class="form-control">
+             </div>
+              
+            
+                 <div class="form-group">
+                   <input type="url" name="image" [(ngModel)]="equipo.image" placeholder="Imagen" class="form-control">
+                 </div>
+                 <button class="btn btn-success btn-block" (click)="edit? updateEquipo() : saveNewequipo()">
+                       save
+                 </button>
+        </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <img [src]="equipo.image == '' ? '/assets/noimage1.png' : equipo.image" class="card-img-top">
+    <h3> {{equipo.id_equipo}}. {{equipo.nombre_eq == '' ? 'nombre equipo ': equipo.nombre_eq}}</h3><br/>
+    <h3>{{equipo.region == '' ? 'region': equipo.region}}</h3><br/>
+    <p>  {{equipo.categoria_eq == '' ? 'videojuego': equipo.categoria_eq}} </p>
+   
+  </div>
+</div>

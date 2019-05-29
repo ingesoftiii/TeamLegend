@@ -1,0 +1,16 @@
+
+  <app-navigation-usuario></app-navigation-usuario>
+  <app-maps></app-maps>
+     
+  <div class="video">
+          <youtube-player
+            [videoId]="id"
+            (ready)="savePlayer($event)"
+            (change)="onStateChange($event)"
+            [playerVars]="playerVars">
+          </youtube-player>
+          <app-maps></app-maps>
+        </div>
+  
+  
+ 

@@ -1,0 +1,61 @@
+<app-navigation></app-navigation> 
+    <div class="col-md-4 offset-md-2">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <input type="text" name="name" [(ngModel)]="player.nombre" placeholder="Nombre" class="form-control"autofocus>
+              </div>
+                 <div class="form-group">
+                   <input type="text" name="apellido" [(ngModel)]="player.apellido" placeholder="Apellido" class="form-control"autofocus>
+                 </div>
+
+                 <div class="form-group">
+                  <input type="text" name="telefono" [(ngModel)]="player.telefono" placeholder="Telefono" class="form-control"autofocus>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" name="email" [(ngModel)]="player.email" placeholder="Email" class="form-control"autofocus>
+                </div>
+
+                <div class="form-group">
+                  <p class="text-center">Fecha Nacimiento</p>
+                  <input type="date" name="fecha_nac" [(ngModel)]="player.fecha_nac" placeholder="Fecha" class="form-control"autofocus>
+                </div> 
+                
+                <div class="form-group">
+                    <input type="text" name="cod_equipo" [(ngModel)]="player.cod_equipo" placeholder="ID Equipo" class="form-control"autofocus>
+                  </div>
+
+                   <div class="form-group">
+                     <input type="text" name="nro_doc" [(ngModel)]="player.nro_doc" placeholder="Numero Documento" class="form-control">
+                   </div>
+                     <div class="form-group">
+                       <input type="text" name="username" [(ngModel)]="player.username" placeholder="Nombre de Usuario" class="form-control">
+                     </div>
+                     <div class="form-group">
+                      <input type="password" name="password" [(ngModel)]="player.password" placeholder="Password" class="form-control">
+                    </div>
+                       <div class="form-group">
+                         <input type="url" name="image" [(ngModel)]="player.image" placeholder="Image" class="form-control">
+                       </div>
+                       <button class="btn btn-success btn-block" (click)="edit ? updatePlayer() :  saveNewPlayer()">
+                             Save
+                       </button>
+              </form>
+          </div>
+        </div>
+     </div>
+
+     <div class="col-md-4">
+       <div class="card card-body text-center">
+         <img [src]="player.image == '' ? '/assets/noimage1.png' : player.image" class="card-img-top">
+         <h3> {{player.id}}. {{player.nombre == '' ? 'Nombre': player.nombre}} {{player.apellido == '' ? 'Apellido': player.apellido}}</h3>
+         <p>  {{player.username == '' ? 'Nombre de Usuario': player.username}} </p>
+         <p> {{player.created_at | date: 'yyyy-MM-dd'}}  </p> 
+       </div>
+     </div>
+
+
+
+
