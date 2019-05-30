@@ -14,13 +14,11 @@ CREATE TABLE administrador (
    image VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
--- --------------------------------------------------------
 
---
 -- Estructura de tabla para la tabla `equipos`
---
 
 CREATE TABLE equipos (
+
   id_equipo int(30) NOT NULL,
   nombre_eq varchar(30),
   region varchar(30),
@@ -29,6 +27,7 @@ CREATE TABLE equipos (
   cod_organizacion int(11),
   image VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
 );
 
 --
@@ -36,7 +35,7 @@ CREATE TABLE equipos (
 --
 
 INSERT INTO equipos (id_equipo, nombre_eq, region, tag, categoria_eq, cod_organizacion) VALUES
-(1, 'Legends', 'Bogota', 'LB', 'Battle Royale', 1);
+(1, 'Legends', 'Cali', 'LB', 'Battle Royale', 1);
 
 -- --------------------------------------------------------
 
@@ -93,7 +92,7 @@ CREATE TABLE jugadores (
 
 INSERT INTO jugadores (id, nombre, apellido, telefono, email, tipo_doc, nro_doc, fecha_nac, cod_equipo, puntuacion, username, password) VALUES
 (1, 'Stewen', 'Gil', '423', 'stewen@gmail.com', 'CC', '1122', '01/01/1999', 1, '200', 'leidcrop', '1122'),
-(2, 'Edward', 'Santa', '423', 'edwen@gmail.com', 'CC', '1123', '01/01/1998', 1, '250', 'Crop', '1123');
+(2, 'Edward', 'Santa', '423', 'edw@hotmail.com', 'CC', '1123', '29/06/1998', 1, '250', 'Crop', '1123');
 
 -- --------------------------------------------------------
 

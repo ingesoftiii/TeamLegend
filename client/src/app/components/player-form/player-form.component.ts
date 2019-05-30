@@ -31,7 +31,7 @@ export class PlayerFormComponent implements OnInit {
 
 edit: boolean = false;
 
-  constructor( private playersService: PlayersService, private router: Router, private  activedRoute: ActivatedRoute) { }
+  constructor( private playersService : PlayersService, private router: Router, private  activedRoute: ActivatedRoute) { }
 
   ngOnInit() {
 
