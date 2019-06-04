@@ -18,6 +18,10 @@ import { VideoComponent } from './components/video/video.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NavigationUsuarioComponent } from './components/navigation-usuario/navigation-usuario.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { DesccripcionComponent } from './components/desccripcion/desccripcion.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 
 
 
@@ -34,6 +38,10 @@ import { NavigationUsuarioComponent } from './components/navigation-usuario/navi
     InicioComponent,
     VideoComponent,
     NavigationUsuarioComponent,
+    PerfilComponent,
+    DesccripcionComponent,
+    ContactoComponent,
+    PatrocinadoresComponent,
    
  
   ],

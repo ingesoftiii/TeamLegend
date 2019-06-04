@@ -6,6 +6,10 @@ import { EquipoListComponent } from './components/equipo-list/equipo-list.compon
 import {  EquipoFormComponent } from './components/equipo-form/equipo-form.component';
 import {  InicioComponent } from './components/inicio/inicio.component';
 import {  VideoComponent } from './components/video/video.component';
+import {  ContactoComponent } from './components/contacto/contacto.component';
+import {  DesccripcionComponent } from './components/desccripcion/desccripcion.component';
+import {  PerfilComponent } from './components/perfil/perfil.component';
+import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 
 const routes: Routes = [
   {
@@ -20,6 +24,22 @@ const routes: Routes = [
   {
     path:'inicio/video',
     component: VideoComponent
+  },
+  {
+    path:'inicio/perfil',
+    component: PerfilComponent
+  },
+  {
+    path:'inicio/contacto',
+    component: ContactoComponent
+  },
+  {
+    path:'inicio/descripcion',
+    component: DesccripcionComponent
+  },
+  {
+    path:'inicio/patrocinadores',
+    component: PatrocinadoresComponent
   },
 
   {
