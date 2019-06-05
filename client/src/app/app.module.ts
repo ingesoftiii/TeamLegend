@@ -22,6 +22,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { DesccripcionComponent } from './components/desccripcion/desccripcion.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
+import { NavigationEquipoComponent } from './components/navigation-equipo/navigation-equipo.component';
 
 
 
@@ -42,6 +43,7 @@ import { PatrocinadoresComponent } from './components/patrocinadores/patrocinado
     DesccripcionComponent,
     ContactoComponent,
     PatrocinadoresComponent,
+    NavigationEquipoComponent,
    
  
   ],
