@@ -10,6 +10,8 @@ import {  ContactoComponent } from './components/contacto/contacto.component';
 import {  DesccripcionComponent } from './components/desccripcion/desccripcion.component';
 import {  PerfilComponent } from './components/perfil/perfil.component';
 import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
+import {  AdministradorComponent } from './components/administrador/administrador.component';
+
 
 const routes: Routes = [
   {
@@ -21,6 +23,13 @@ const routes: Routes = [
     path:'inicio',
     component: InicioComponent
   },
+  
+  {
+    path:'administrador',
+    component: AdministradorComponent
+  },
+
+  
   {
     path:'inicio/video',
     component: VideoComponent
