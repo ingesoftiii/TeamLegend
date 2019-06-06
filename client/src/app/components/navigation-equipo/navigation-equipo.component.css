@@ -1,16 +1,12 @@
-/* CSS used here will be applied after bootstrap.css */
-.navbar-fixed-left {
-  width: 220px;
-  position: fixed;
-  border-radius:0;
-  height: 100%;
-}
+.a1 {
   
-
+ background-color: black;
+    height: 100%;
+  }
 .nav2{
-  width: 220px;
-  position: initial;
-  border-radius:0;
-  height: 100%;
-  
-}
+    width: 220px;
+    position: initial;
+    border-radius:0;
+    height: 100%;
+    
+  }
