@@ -23,6 +23,7 @@ import { DesccripcionComponent } from './components/desccripcion/desccripcion.co
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 import { NavigationEquipoComponent } from './components/navigation-equipo/navigation-equipo.component';
+import { AdministradorLoginComponent } from './components/administrador-login/administrador-login.component';
 
 
 
@@ -44,6 +45,7 @@ import { NavigationEquipoComponent } from './components/navigation-equipo/naviga
     ContactoComponent,
     PatrocinadoresComponent,
     NavigationEquipoComponent,
+    AdministradorLoginComponent,
    
  
   ],
