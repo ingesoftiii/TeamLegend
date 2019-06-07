@@ -24,6 +24,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 import { NavigationEquipoComponent } from './components/navigation-equipo/navigation-equipo.component';
 import { AdministradorComponent } from './components/administrador/administrador.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
 
 
 
@@ -47,6 +49,8 @@ import { AdministradorComponent } from './components/administrador/administrador
     PatrocinadoresComponent,
     NavigationEquipoComponent,
     AdministradorComponent,
+    FooterComponent,
+    ConvocatoriaComponent,
   
  
   ],

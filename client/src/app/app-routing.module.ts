@@ -11,6 +11,8 @@ import {  DesccripcionComponent } from './components/desccripcion/desccripcion.c
 import {  PerfilComponent } from './components/perfil/perfil.component';
 import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 import {  AdministradorComponent } from './components/administrador/administrador.component';
+import {  ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
+
 
 
 const routes: Routes = [
@@ -22,6 +24,11 @@ const routes: Routes = [
   {
     path:'inicio',
     component: InicioComponent
+  },
+
+  {
+    path:'inicio/convocatoria',
+    component: ConvocatoriaComponent
   },
   
   {
