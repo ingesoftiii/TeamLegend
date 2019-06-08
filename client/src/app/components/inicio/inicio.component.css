@@ -1,87 +1,71 @@
-.grid-block{
-
-
-    background-image: url('/assets/musica.gif'); 
-    background-size: cover;
-    width: 100%; 
-    height: 100%; 
-    background-repeat: no-repeat;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .header-video {
     position: absolute;
-    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
-   
+  }
+  
+  .header-video video {
+    min-width: 100%;
+    min-height: 100%;
+  }
 
-}
-.btn_start{
-background-color: steelblue;
-border-color: steelblue;
-
-
-}
-
-.bodies {
-
-    /* Ubicación de la imagen */
-    
-    
-
-    height: 100%; 
-    
-    /* Para dejar la imagen de fondo centrada, vertical y
-    
-    horizontalmente */
-    
-    background-position: center;
-    
-    /* Para que la imagen de fondo no se repita */
-    
-    background-repeat: no-repeat;
-    
-    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-    
-    background-attachment: fixed;
-    
-    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-    
-    background-size: cover;
-    
-    /* Se muestra un color de fondo mientras se está cargando la imagen
-    
-    de fondo o si hay problemas para cargarla */
-    
-    background-color: darkslategrey;
-
-    
-
-    
-    
+  
+  .header-content {
+    z-index: 2;
+  }
+  
+  .header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+  
+  .btn {
+    background: #c44569;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 960px) {
+    .content {
+      padding: 0 3rem 0 3rem;
     }
-
-    .centerbtn{ 
-        position:absolute; 
-        width:100%; left:0;
-        text-align:center;
-        margin:auto;
-        /*position: relative; top: 50%; transform: translateY(-50%) translateX(30%); width: 100%;*/
-    }
-
-    .trans{
-       
-        width: 1350px;
-        display: flex;
-        justify-content: center;
-        float: none;
-        z-index: 2px;
-       
-      }
-
-    
-    
-    
-    .container-fluid {
-       	border:none;
-    	display: flex;
-      	justify-content: center;	
-    }
-    
-    
+  }
