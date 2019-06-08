@@ -1,0 +1,75 @@
+
+
+.a3 {
+   
+    background-color:black;
+    height: 100%;
+
+  }
+
+ 
+
+.a6 {
+   
+
+
+    
+
+
+}
+
+
+.a7 {
+
+ 
+  width:100% ;
+  height:20%;
+ 
+}
+
+
+
+.a4 {
+   
+  background-color:black;
+
+}
+
+.a8{
+    background-image: url("/assets/prueba.png");
+}
+
+.a9 { 
+ 
+    font-size:100%;
+    text-align:center;
+    color:white;
+    margin-left:20%; 
+    margin-right:20%;
+    
+
+    }
+
+.a10{
+        float: right;
+        color:white;
+        text-align:center;
+
+    }
+.a11{
+      float: left;
+    }
+
+    .a16  {
+   
+  
+        width: 100%;
+        background-color: rgba(33, 133, 124, 0.493);
+        color:white;
+        
+       }
+
+
+
+
+
