@@ -4,6 +4,9 @@ import cors from 'cors';
 import indexRoutes from './routes/indexRoutes';
 import playerRoutes from './routes/playerRoutes';
 import equiporoutes from './routes/equipoRoutes';
+import postRoutes from './routes/postRoutes';
+import adminRoutes from './routes/adminRoutes';
+
 
 class Server {
 
@@ -28,6 +31,8 @@ class Server {
         this.app.use('/',indexRoutes);
         this.app.use('/api/player', playerRoutes);
         this.app.use('/api/equipo', equiporoutes);
+        this.app.use('/api/post', postRoutes);
+        this.app.use('/api/admin', adminRoutes);
 
 
     }
