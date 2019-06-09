@@ -1,3 +1,4 @@
+import { PostFormComponent } from './components/post-form/post-form.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PlayerListComponent } from './components/player-list/player-list.component';
@@ -82,6 +83,19 @@ const routes: Routes = [
   {
     path: 'equipos/edit/:id',
     component:  EquipoFormComponent  
+  },
+
+  {
+    path: 'post',
+    component:  PostFormComponent  
+  },
+  {
+    path: 'post/add',
+    component:  PostFormComponent  
+  },
+  {
+    path: 'post/edit/:id',
+    component:  PostFormComponent  
   }
 
 ];
