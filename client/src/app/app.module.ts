@@ -26,6 +26,8 @@ import { NavigationEquipoComponent } from './components/navigation-equipo/naviga
 import { AdministradorComponent } from './components/administrador/administrador.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
+import { GroupComponent } from './components/group/group.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -51,6 +53,8 @@ import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.co
     AdministradorComponent,
     FooterComponent,
     ConvocatoriaComponent,
+    GroupComponent,
+    LoginComponent,
   
  
   ],
