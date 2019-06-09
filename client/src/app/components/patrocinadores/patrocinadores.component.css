@@ -1,5 +1,6 @@
 
 
+
 .a3 {
    
     background-color:black;
@@ -90,3 +91,25 @@
 
 
 
+
+.a3 {
+     
+    background-color:black;
+    height: 100%;
+  
+  }
+  
+  .a4 {
+   
+  background-color:black;
+  
+  }
+  
+  .a8{
+    background-image: url("/assets/prueba.png");
+  }
+  
+  
+  
+  
+  
