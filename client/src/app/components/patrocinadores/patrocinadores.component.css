@@ -1,0 +1,92 @@
+
+
+.a3 {
+   
+    background-color:black;
+    height: 100%;
+
+  }
+
+ 
+
+.a6 {
+   
+
+
+
+   background-color: black;
+  
+    width: 100%; 
+    height: 100%; 
+
+   
+   
+
+}
+
+
+.a7 {
+
+ 
+  width:100% ;
+  height:15%;
+ 
+}
+
+
+
+.a4 {
+   
+  background-color:black;
+
+}
+
+.a11 {
+   
+ float:right ;
+
+}
+
+.a12 {
+   
+  float: left; 
+ 
+  color: white;
+ }
+
+ .a13 {
+   
+  font-size:200%;
+  text-align: center;
+  
+ }
+ .a14 {
+   
+  font-size:100%;
+  text-align:center;
+  margin-left:20%; 
+  margin-right: 20%;
+  
+ }
+
+ .a15  {
+   
+  
+  font-size:100%;
+  text-align:center;
+  margin-left:30%; 
+  margin-right:30%;
+  
+ }
+ 
+ .a16  {
+   
+  
+  width: 100%;
+  background-color: rgba(33, 133, 124, 0.493);
+  color:white;
+  
+ }
+
+
+
