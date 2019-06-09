@@ -12,43 +12,43 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const database_1 = __importDefault(require("../database"));
-class EquipoController {
+class AdminController {
     list(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const equipos = yield database_1.default.query('SELECT * FROM equipos');
-            res.json(equipos);
+            const admin = yield database_1.default.query('SELECT * FROM administrador');
+            res.json(admin);
         });
     }
     getOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const equipos = yield database_1.default.query('SELECT * FROM equipos WHERE id_equipo = ?', [id]);
-            if (equipos.length > 0) {
-                return res.json(equipos[0]);
+            const admin = yield database_1.default.query('SELECT * FROM administrador WHERE id_admin = ?', [id]);
+            if (admin.length > 0) {
+                return res.json(admin[0]);
             }
-            res.status(404).json({ text: 'The equiposs doesnt exists' });
+            res.status(404).json({ text: 'The admin doesnt exists' });
         });
     }
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield database_1.default.query('INSERT INTO equipos set ?', [req.body]);
-            res.json({ message: 'equipo Saved' });
+            yield database_1.default.query('INSERT INTO administrador set ?', [req.body]);
+            res.json({ message: 'Admin Saved' });
         });
     }
     update(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            yield database_1.default.query('UPDATE equipos set ? WHERE id_equipo = ?', [req.body, id]);
-            res.json({ message: 'The equipo was updated' });
+            yield database_1.default.query('UPDATE administrador set ? WHERE id_admin = ?', [req.body, id]);
+            res.json({ message: 'The admin was updated' });
         });
     }
     delete(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            yield database_1.default.query('DELETE FROM equipos WHERE id_equipo = ?', [id]);
-            res.json({ message: 'The equipos was deleted' });
+            yield database_1.default.query('DELETE FROM administrador WHERE id_admin = ?', [id]);
+            res.json({ message: 'The admin was deleted' });
         });
     }
 }
-const equipoController = new EquipoController();
-exports.default = equipoController;
+const adminController = new AdminController();
+exports.default = adminController;

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import postController from '../controllers/postController';
+import adminController from '../controllers/adminController';
 
 class AdminRoutes {
 
@@ -11,11 +11,11 @@ class AdminRoutes {
     }
 
     config(): void {
-        this.router.get('/', postController.list);
-        this.router.get('/:id',postController.getOne );
-        this.router.post('/',postController.create);
-        this.router.put('/:id',postController.update);
-        this.router.delete('/:id',postController.delete);
+        this.router.get('/', adminController.list);
+        this.router.get('/:id',adminController.getOne );
+        this.router.post('/',adminController.create);
+        this.router.put('/:id',adminController.update);
+        this.router.delete('/:id',adminController.delete);
     }
 }
 
