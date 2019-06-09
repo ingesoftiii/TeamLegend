@@ -42,7 +42,7 @@ edit: boolean = false;
     }
   }
 
-  saveNewPlayer(){
+  saveNewPost(){
     delete this.post.fecha_post;
     delete this.post.id_post;
 
@@ -56,7 +56,7 @@ edit: boolean = false;
     )
   }
 
-  updatePlayer(){
+  updatePost(){
     delete this.post.fecha_post;
     this.postService.updatePost(this.post.id_post,this.post)
     .subscribe(

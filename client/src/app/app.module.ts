@@ -26,7 +26,7 @@ import { NavigationEquipoComponent } from './components/navigation-equipo/naviga
 import { AdministradorComponent } from './components/administrador/administrador.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
-import { PostFormComponent } from './component/post-form/post-form.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { AdminFormComponent } from './components/admin-form/admin-form.component';
 
