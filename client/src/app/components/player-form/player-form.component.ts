@@ -1,6 +1,6 @@
 import { Player } from './../../models/Player';
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router'
+import { ActivatedRoute, Router } from '@angular/router';
 import { PlayersService } from '../../services/players.service';
 
 
