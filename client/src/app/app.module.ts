@@ -52,6 +52,7 @@ import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.co
     AdministradorComponent,
     FooterComponent,
     ConvocatoriaComponent,
+    
 
   
  
