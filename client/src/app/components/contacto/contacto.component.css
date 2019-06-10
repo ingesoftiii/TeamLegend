@@ -85,7 +85,7 @@
   .info_items{
       position: relative;
       z-index: 2;
-      color: #fff;
+      color: rgb(255, 255, 255);
   }
   
   .info_title{
@@ -159,7 +159,7 @@
       border-bottom: 2px solid #D1D1D1;
   
       font-family: 'Open sans';
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 400;
   }
