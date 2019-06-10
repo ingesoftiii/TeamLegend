@@ -55,16 +55,9 @@ import { AdminFormComponent } from './components/admin-form/admin-form.component
     AdministradorComponent,
     FooterComponent,
     ConvocatoriaComponent,
-<<<<<<< HEAD
-    
-=======
-    PostFormComponent,
+     PostFormComponent,
     PostListComponent,
     AdminFormComponent,
->>>>>>> 444cd51a2b00091d778a5e1f8ca3d4feb2bccc4e
-
-  
- 
   ],
   imports: [
     BrowserModule,
