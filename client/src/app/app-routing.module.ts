@@ -14,8 +14,6 @@ import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinad
 import {  AdministradorComponent } from './components/administrador/administrador.component';
 import {  ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
 
-
-
 const routes: Routes = [
   {
     path:'',
@@ -36,7 +34,6 @@ const routes: Routes = [
     path:'administrador',
     component: AdministradorComponent
   },
-
   
   {
     path:'inicio/video',
