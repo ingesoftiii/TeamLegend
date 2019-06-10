@@ -50,7 +50,7 @@ edit: boolean = false;
     .subscribe(
       res => {
       console.log(res);
-      this.router.navigate(['/posts']);
+      this.router.navigate(['/post']);
       },
       err => console.error(err)
     )
@@ -62,7 +62,7 @@ edit: boolean = false;
     .subscribe(
       res =>{
         console.log(res);
-        this.router.navigate(['/posts']);
+        this.router.navigate(['/post']);
       },
       err => console.error(err)
     )

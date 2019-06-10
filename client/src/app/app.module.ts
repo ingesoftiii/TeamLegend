@@ -29,6 +29,13 @@ import { ConvocatoriaComponent } from './components/convocatoria/convocatoria.co
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { AdminFormComponent } from './components/admin-form/admin-form.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { Admin1Component } from './components/admin1/admin1.component';
+import { Admin2Component } from './components/admin2/admin2.component';
+import { Admin3Component } from './components/admin3/admin3.component';
+import { Admin4Component } from './components/admin4/admin4.component';
+import { Admin5Component } from './components/admin5/admin5.component';
+
 
 
 
@@ -55,9 +62,19 @@ import { AdminFormComponent } from './components/admin-form/admin-form.component
     AdministradorComponent,
     FooterComponent,
     ConvocatoriaComponent,
-     PostFormComponent,
+    PostFormComponent,
     PostListComponent,
     AdminFormComponent,
+    AdminComponent,
+    Admin1Component,
+    Admin2Component,
+    Admin3Component,
+    Admin4Component,
+    Admin5Component,
+
+
+  
+ 
   ],
   imports: [
     BrowserModule,
