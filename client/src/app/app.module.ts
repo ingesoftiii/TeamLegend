@@ -36,6 +36,9 @@ import { Admin3Component } from './components/admin3/admin3.component';
 import { Admin4Component } from './components/admin4/admin4.component';
 import { Admin5Component } from './components/admin5/admin5.component';
 import { Equipo3Component } from './components/equipo3/equipo3.component';
+import { RecorridoComponent } from './components/recorrido/recorrido.component';
+import { Players2Component } from './components/players2/players2.component';
+import { Post2Component } from './components/post2/post2.component';
 
 
 
@@ -73,6 +76,9 @@ import { Equipo3Component } from './components/equipo3/equipo3.component';
     Admin4Component,
     Admin5Component,
     Equipo3Component,
+    RecorridoComponent,
+    Players2Component,
+    Post2Component,
 
 
   

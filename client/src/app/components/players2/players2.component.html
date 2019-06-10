@@ -1,0 +1,24 @@
+
+
+<div class="col-md-12"> 
+
+    <div class="col-md-3 a5" *ngFor="let player of players">
+      <div class="card text-center">
+        <div class="card-header bg-dark  text-white d-flex justify-content-between align-items-center ">
+        {{player.nombre}} 
+        <button class="btn btn-danger" (click)="deletePlayer(player.id)">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        </div>
+        <img [src]="player.image" class="card-img-top">
+        <div class="card-body">
+        <P>{{player.username}}, {{player.cod_equipo}}</P>
+        <a [routerLink]="['/players/edit', player.id]" class="btn btn-info btn-block"> 
+          EDIT PLAYERS
+        </a>
+        </div>
+      </div>
+    
+    </div>
+  
+    </div>

@@ -1,0 +1,60 @@
+.video{
+
+    width: 100%;
+    margin-left:30%; 
+    margin-right: 30%;
+  
+  }
+  .a3 {
+     
+    background-color:black;
+    height: 100%;
+  
+  }
+  
+  .a4 {
+   
+  background-color:black;
+  
+  }
+  
+  .a8{
+    background-image: url("/assets/prueba.png");
+  }
+  .a9 {
+    width: 80%;
+    height: 400px;
+    background-color: cadetblue;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .a14 {
+           
+    font-size:100%;
+    text-align:center;
+    margin-left:30%; 
+    margin-right: 30%;
+    height: 400px;
+    color:white;
+    
+   }
+  
+   .a10{
+    background-image: url("/assets/estadio2.jpg");
+  }
+.a20{
+
+    color:white;
+    text-align:center;
+}
+.a21{
+
+    color:white;
+    text-align:center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+  
+  

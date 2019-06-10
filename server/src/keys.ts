@@ -2,7 +2,7 @@ export default {
     database: {
         host: 'localhost',
         user:'root',
-        password:'12345678',
+        password:'',
         database:'angulardb1'
     }
 }

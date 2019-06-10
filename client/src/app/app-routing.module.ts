@@ -20,6 +20,7 @@ import { Admin2Component } from './components/admin2/admin2.component';
 import { Admin3Component } from './components/admin3/admin3.component';
 import { Admin4Component } from './components/admin4/admin4.component';
 import { Admin5Component } from './components/admin5/admin5.component';
+import { RecorridoComponent } from './components/recorrido/recorrido.component';
 
 
 
@@ -67,6 +68,10 @@ const routes: Routes = [
   {
     path:'inicio/patrocinadores',
     component: PatrocinadoresComponent
+  },
+  {
+    path:'inicio/recorrido',
+    component: RecorridoComponent
   },
 
   {
