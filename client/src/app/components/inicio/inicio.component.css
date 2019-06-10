@@ -11,14 +11,15 @@
   }
   
   .header {
-    height: 100vh;
+    height: 90vh;
+    
     display: flex;
     align-items: center;
     color: #fff;
   }
   
   .content {
-    max-width: 40rem;
+    max-width: 35rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: auto;
@@ -35,8 +36,8 @@
   }
   
   .header-video video {
-    min-width: 10%;
-    min-height: 1%;
+    min-width: 100%;
+    min-height: 100%;
     max-width: 100%;
     
   }
@@ -65,8 +66,7 @@
     padding: 1rem 2rem;
     text-decoration: none;
   }
- HEAD
-  
+
   @media (max-width: 960px) {
     .content {
       padding: 0 3rem 0 3rem;

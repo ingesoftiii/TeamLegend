@@ -185,6 +185,9 @@
     font-weight: 600;
     cursor: pointer;
   }
+  .inputborder{
+    border-radius: 15px;
+  }
   
   form.form_contact input[type="button"]:hover{
       background: rgb(3, 3, 3);
@@ -252,7 +255,7 @@
     border: 2px solid rgb(10, 10, 10);
     cursor: pointer;
   
-    float: right;
+  
   }
   
   .a20{
