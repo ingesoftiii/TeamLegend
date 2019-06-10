@@ -35,6 +35,7 @@ import { Admin2Component } from './components/admin2/admin2.component';
 import { Admin3Component } from './components/admin3/admin3.component';
 import { Admin4Component } from './components/admin4/admin4.component';
 import { Admin5Component } from './components/admin5/admin5.component';
+import { Equipo3Component } from './components/equipo3/equipo3.component';
 
 
 
@@ -71,6 +72,7 @@ import { Admin5Component } from './components/admin5/admin5.component';
     Admin3Component,
     Admin4Component,
     Admin5Component,
+    Equipo3Component,
 
 
   
