@@ -14,6 +14,14 @@ import {  PerfilComponent } from './components/perfil/perfil.component';
 import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 import {  AdministradorComponent } from './components/administrador/administrador.component';
 import {  ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
+import {  AdminComponent } from './components/admin/admin.component';
+import { Admin1Component } from './components/admin1/admin1.component';
+import { Admin2Component } from './components/admin2/admin2.component';
+import { Admin3Component } from './components/admin3/admin3.component';
+import { Admin4Component } from './components/admin4/admin4.component';
+import { Admin5Component } from './components/admin5/admin5.component';
+
+
 
 const routes: Routes = [
   {
@@ -30,6 +38,10 @@ const routes: Routes = [
     path:'inicio/convocatoria',
     component: ConvocatoriaComponent
   },
+  {
+  path:'administrar',
+  component: AdminComponent
+},
   
   {
     path:'administrador',
@@ -59,41 +71,41 @@ const routes: Routes = [
 
   {
     path:'players',
-    component: PlayerListComponent
+    component: AdminComponent
   },
   {
    path:'players/add',
-   component: PlayerFormComponent
+   component: Admin1Component
   }, 
   {
     path: 'players/edit/:id',
-    component:  PlayerFormComponent  
+    component:  Admin1Component  
   },
 
   {
     path:'equipos',
-    component: EquipoListComponent
+    component: Admin2Component
   },
   {
    path:'equipos/add',
-   component: EquipoFormComponent
+   component: Admin3Component
   }, 
   {
     path: 'equipos/edit/:id',
-    component:  EquipoFormComponent  
+    component:  Admin3Component  
   },
 
   {
-    path: 'posts',
-    component:  PostListComponent  
+    path: 'post',
+    component:  Admin4Component  
   },
   {
     path: 'post/add',
-    component:  PostFormComponent  
+    component:  Admin5Component  
   },
   {
     path: 'post/edit/:id',
-    component:  PostFormComponent  
+    component:  Admin5Component  
   }
 
 ];
