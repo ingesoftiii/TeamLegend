@@ -1,1 +1,24 @@
-<button class="prueba" [routerLink]="['/players']" class="btn btn-info btn-info btninter">Comenzar</button>
+<div class="sidenav">
+        <div class="login-main-text">
+           <h2>Application<br> Login Page</h2>
+           <p>Login or register from here to access.</p>
+        </div>
+     </div>
+     <div class="main">
+        <div class="col-md-6 col-sm-12">
+           <div class="login-form">
+              <form (submit)="loginUser($event)">
+                 <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" name="username" class="form-control" placeholder="Usuario" >
+                 </div>
+                 <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" name="password" class="form-control" placeholder="Contraseña" >
+                 </div>
+                 <button type="submit" class="btn btn-black">Login</button>
+                 <button type="submit" class="btn btn-secondary">Registrar</button>
+              </form>
+           </div>
+        </div>
+     </div>
