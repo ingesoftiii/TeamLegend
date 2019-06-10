@@ -15,3 +15,149 @@
     background-image: url("/assets/prueba.png");
   }
   
+  .prue{
+    width: 76%;
+
+    background-color: #fff;
+    
+    min-height: 400px;
+  }
+
+  .prue article.header{
+margin: 27px;
+
+padding: 0 0 27px;
+
+border-bottom: 1px solid #e7e7f3;
+  }
+
+  .prue article.header div.top-line p{
+    margin-right: 5px;
+    background-color: rgb(252, 25, 35);
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+display: block;
+font-family: "Ubuntu", sans-serif;
+font-size: 10px;
+font-weight: 700;
+line-height: 10px;
+margin-right: 5px;
+padding-bottom: 8px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 8px;
+text-decoration: none;
+text-decoration-color: rgb(255, 255, 255);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-transform: uppercase;
+  }
+.top-line{
+
+  padding: 1%;
+}
+  .lol{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 17%;
+  }
+
+ .social{
+   margin-left: 70%;
+ }
+
+ /* Style all font awesome icons */
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.prue article.header h3{
+  color: #000;
+
+font-weight: 700;
+
+font-size: 1.125em;
+
+font-family: "Ubuntu",sans-serif;
+
+line-height: 1;
+
+margin: 0 0 10px;
+
+margin-top: -7%;
+}
+
+.date{
+  box-sizing: border-box;
+color: rgb(252, 25, 35);
+font-family: "Ubuntu", sans-serif;
+font-size: 14px;
+line-height: 14px;
+}
+
+.content{
+  padding: 0 27px 27px;
+    color: #9292a2;
+    font-size: .875em;
+    font-family: "Ubuntu",sans-serif;
+    line-height: 25px;
+
+}
+
+
+.texto-color-gris{
+  box-sizing: border-box;
+color: rgb(49, 49, 49);
+font-family: "Ubuntu", sans-serif;
+font-size: 14px;
+line-height: 25px;
+margin-bottom: 15px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+}
+
+  
+  /* aside{
+    float: right;
+    width: 27.7%;
+    margin-top: -400px;
+  }
+
+  aside article li{
+background-color: #14141c;
+
+padding: 20px 15px;
+list-style: none;
+ width: 105%;
+
+height: 150px; 
+  } */
+
+  
