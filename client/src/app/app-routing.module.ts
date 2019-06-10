@@ -1,3 +1,5 @@
+import { PostListComponent } from './components/post-list/post-list.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PlayerListComponent } from './components/player-list/player-list.component';
@@ -12,8 +14,6 @@ import {  PerfilComponent } from './components/perfil/perfil.component';
 import {  PatrocinadoresComponent } from './components/patrocinadores/patrocinadores.component';
 import {  AdministradorComponent } from './components/administrador/administrador.component';
 import {  ConvocatoriaComponent } from './components/convocatoria/convocatoria.component';
-
-
 
 const routes: Routes = [
   {
@@ -35,7 +35,6 @@ const routes: Routes = [
     path:'administrador',
     component: AdministradorComponent
   },
-
   
   {
     path:'inicio/video',
@@ -82,6 +81,19 @@ const routes: Routes = [
   {
     path: 'equipos/edit/:id',
     component:  EquipoFormComponent  
+  },
+
+  {
+    path: 'posts',
+    component:  PostListComponent  
+  },
+  {
+    path: 'post/add',
+    component:  PostFormComponent  
+  },
+  {
+    path: 'post/edit/:id',
+    component:  PostFormComponent  
   }
 
 ];
