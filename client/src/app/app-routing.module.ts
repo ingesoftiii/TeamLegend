@@ -21,13 +21,14 @@ import { Admin3Component } from './components/admin3/admin3.component';
 import { Admin4Component } from './components/admin4/admin4.component';
 import { Admin5Component } from './components/admin5/admin5.component';
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 
 
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'/inicio',
+    redirectTo:'/administrador',
     pathMatch: 'full'
   },
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
     component: AdministradorComponent
   },
   
+  {
+    path:'prueba2',
+    component: PruebaComponent
+  },
   {
     path:'inicio/video',
     component: VideoComponent

@@ -39,6 +39,7 @@ import { Equipo3Component } from './components/equipo3/equipo3.component';
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
 import { Players2Component } from './components/players2/players2.component';
 import { Post2Component } from './components/post2/post2.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 
 
 
@@ -79,6 +80,7 @@ import { Post2Component } from './components/post2/post2.component';
     RecorridoComponent,
     Players2Component,
     Post2Component,
+    PruebaComponent,
 
 
   
