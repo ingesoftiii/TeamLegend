@@ -1,28 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark a2">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">TEAM LEGEND</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" (click)="activee" routerLink="/players">TEAM LEGEND</a>
+  <button class="navbar-toggler" type="button"  routerLink="/players/add"  (click)="activee" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/administrar" routerLinkActive="active">Jugadores</a>
+        <a class="nav-link" routerLink="/administrar"   (click)="activee" routerLinkActive="active">Jugadores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/players/add" routerLinkActive="active">Registrar Jugadores</a>
+        <a class="nav-link" routerLink="/players/add"  (click)="activee"  routerLinkActive="active">Registrar Jugadores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/equipos" routerLinkActive="active">Equipos</a>
+        <a class="nav-link" routerLink="/equipos"  (click)="activee"  routerLinkActive="active">Equipos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/equipos/add" routerLinkActive="active">Registrar Equipos</a>
+        <a class="nav-link" routerLink="/equipos/add"   (click)="activee" routerLinkActive="active">Registrar Equipos</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" routerLink="/post" routerLinkActive="active">post</a>
+          <a class="nav-link" routerLink="/post" (click)="activee" routerLinkActive="active">post</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLink="/post/add" routerLinkActive="active">crear post</a>
+            <a class="nav-link" routerLink="/post/add"   (click)="activee" routerLinkActive="active">crear post</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/administrador" (click)="desactive"   routerLinkActive="active">cerrar secion</a>
           </li>
     </ul>
   </div>

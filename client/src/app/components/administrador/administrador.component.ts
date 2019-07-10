@@ -1,5 +1,6 @@
 import { Adminservice } from './../../services/admin.service';
 import { Admin } from './../../models/admin';
+import { AuthService } from './../../auth/auth.service';
 import { Component, OnInit, HostBinding ,ViewChild} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -60,7 +61,7 @@ export class AdministradorComponent implements OnInit {
     contrasena: ""
    };
 
-  constructor( private adminservices : Adminservice, private router: Router, private  activedRoute: ActivatedRoute) { }
+  constructor( private adminservices : Adminservice,public authService: AuthService, private router: Router, private  activedRoute: ActivatedRoute) { }
 
 
 
@@ -97,31 +98,31 @@ logininicio(login)
   this.login1.usuario=login.usuario
   this.login1.contrasena=login.contrasena
   login=this.admin
-
-
-
-
-
 for (let data of login){
-  console.log(data.usuario)
-  console.log(data.contrasena)
-
 if (
-  
-  this.login1.usuario == data.usuario &&   this.login1.contrasena == data.contrasena){
+    this.login1.usuario == data.usuario &&   this.login1.contrasena == data.contrasena){
   this.router.navigate(['players']);
-  console.log("se ha iniciado correctamente");
-  break;
+  this.authService.login().subscribe(() => {
+    if (this.authService.isLoggedIn) {
+      // Get the redirect URL from our auth service
+      // If no redirect has been set, use the default
+      console.log(this.authService.isLoggedIn)
+      let redirect = this.authService.redirectUrl ? this.router.parseUrl(this.authService.redirectUrl) : '/players';
 
+      // Redirect the user
+      this.router.navigateByUrl(redirect);
+    }
+  });
+ 
+  break;
 }
 else{
   console.log("erroneo")
+  console.log(this.authService.isLoggedIn)
+}
 }
 }
 
-
-
-}
 registrar(){
   
 }

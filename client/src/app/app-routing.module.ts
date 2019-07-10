@@ -22,13 +22,16 @@ import { Admin4Component } from './components/admin4/admin4.component';
 import { Admin5Component } from './components/admin5/admin5.component';
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
+import { AuthGuard }                from './auth/auth.guard';
+
+
 
 
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'/administrador',
+    redirectTo:'/inicio',
     pathMatch: 'full'
   },
   {
@@ -42,7 +45,9 @@ const routes: Routes = [
   },
   {
   path:'administrar',
-  component: AdminComponent
+  component: AdminComponent,
+  canActivate: [AuthGuard]
+
 },
   
   {
@@ -81,11 +86,14 @@ const routes: Routes = [
 
   {
     path:'players',
-    component: AdminComponent
+    component: AdminComponent,
+    canActivate: [AuthGuard]
   },
   {
    path:'players/add',
-   component: Admin1Component
+   component: Admin1Component,
+   canActivate: [AuthGuard]
+
   }, 
   {
     path: 'players/edit/:id',
@@ -94,24 +102,33 @@ const routes: Routes = [
 
   {
     path:'equipos',
-    component: Admin2Component
+    component: Admin2Component,
+    canActivate: [AuthGuard]
+
   },
   {
    path:'equipos/add',
-   component: Admin3Component
+   component: Admin3Component,
+   canActivate: [AuthGuard]
+
   }, 
   {
     path: 'equipos/edit/:id',
     component:  Admin3Component  
+    
   },
 
   {
     path: 'post',
-    component:  Admin4Component  
+    component:  Admin4Component ,
+    canActivate: [AuthGuard]
+ 
   },
   {
     path: 'post/add',
-    component:  Admin5Component  
+    component:  Admin5Component  ,
+    canActivate: [AuthGuard]
+
   },
   {
     path: 'post/edit/:id',
